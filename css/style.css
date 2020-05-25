@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+body{
+    font-family: 'Crimson Text', serif;
+}
+img{
+    width: 100%;
+}
+header{
+    background: url('../images/bgSmall.jpg');
+    height: 50vh;
+}
+
+
