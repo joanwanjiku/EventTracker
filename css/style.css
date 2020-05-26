@@ -26,4 +26,6 @@ header h2 {
 .col-sm-8 {
     padding-top: 5%;
 }
- 
+#form1, #form2 {
+    display: none;
+}
