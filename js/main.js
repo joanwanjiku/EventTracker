@@ -1,0 +1,9 @@
+$(document).ready(function(){
+  $("#signin").click(function(){
+  $("form#form1").toggle();
+  })
+  $("#signup").click(function(){
+    $("form#form1").hide();
+    $("form#form2").toggle();
+  });
+})
