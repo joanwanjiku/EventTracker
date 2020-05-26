@@ -10,5 +10,20 @@ header{
     background: url('../images/bgSmall.jpg');
     height: 50vh;
 }
-
-
+.col-md-7, .col-md-5 {
+    float: left;
+    padding: 5%;
+}
+header h2 {
+    text-transform: uppercase;
+    color: brown;
+    text-align: center;
+    padding-top: 10%;
+}
+.form-control {
+    padding-top: 2%;
+}
+.col-sm-8 {
+    padding-top: 5%;
+}
+ 
