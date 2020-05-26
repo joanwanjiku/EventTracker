@@ -10,5 +10,13 @@ header{
     background: url('../images/bgSmall.jpg');
     height: 50vh;
 }
+/* event.html file*/
+#container-fluid{
+    background-image: url('../images/event2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:auto;
+}
+
 
 
