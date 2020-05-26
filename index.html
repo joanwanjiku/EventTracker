@@ -8,13 +8,18 @@
         <title>Event Tracker</title>
     </head>
     <body>
-        <header class="row">
+        <header class="current">
             <h2>Current time</h2>
         </header>
         <div class="container">
             <div class="row mt-2">
                 <div class="col-md-7">
                     <h1>About us</h1>
+                    <p> 
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ducimus magnam fugit sequi 
+                        molestias reiciendis quibusdam quis asperiores officiis sit, 
+                        dolore dignissimos suscipit aspernatur laboriosam nulla doloremque porro alias saepe?
+                    </p>
                     <p> 
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ducimus magnam fugit sequi 
                         molestias reiciendis quibusdam quis asperiores officiis sit, 
@@ -37,25 +42,49 @@
                         </div>
                     </div>
                     <div class="row">
-                        <form>
+                        <form id="sign in">
                             <div class="form-group row">
                               <label for="name" class="col-sm-4 col-form-label">Name</label>
                               <div class="col-sm-8">
-                                <input type="text"  class="form-control" id="name" placeholder="name">
+                                <input type="text"  class="form-control" id="name" placeholder="yourname..." required>
                               </div>
                             </div>
                             <div class="form-group row">
                               <label for="inputPassword" class="col-sm-4 col-form-label">Password</label>
                               <div class="col-sm-8">
-                                <input type="password" class="form-control" id="inputPassword">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="yourpassword..." required>
                               </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-10">
-                                    <button type="submit" class="btn btn-info"><a href="./event.html">Submit</a></button>
+                                    <button type="submit" aria-required="true" class="btn btn-info"><a aria-required="true" href="./event.html">Submit</a></button>
                                 </div>
                             </div>
                         </form>
+                        <form id="sign up">
+                            <div class="form-group row">
+                              <label for="name" class="col-sm-4 col-form-label">Name</label>
+                              <div class="col-sm-8">
+                                <input type="text"  class="form-control" id="name" placeholder="yourname..." required>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputPassword" class="col-sm-4 col-form-label">Password</label>
+                              <div class="col-sm-8">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="yourpassword..." required>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPassword" class="col-sm-4 col-form-label">Retype password</label>
+                                <div class="col-sm-8">
+                                  <input type="password" class="form-control" id="inputPassword" placeholder="confirmpassword..." required>
+                                </div>
+                              </div>
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <button type="submit" aria-required="true" class="btn btn-info"><a aria-required="true" href="./event.html">Submit</a></button>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
