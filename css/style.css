@@ -21,29 +21,29 @@ header{
     align-items: center;
 }
 .timeStamp{
-    background: #9789949c;
+    background: #aa9ba79c;
     margin: auto;
-    width: 50%;
-    box-shadow: 3px 3px 5px 6px #849fb4;
-    padding: 1em;    
-    border: 2px red solid;
+    width: 60%;
+    box-shadow: 2px 2px 4px 5px #849fb4;
+    /* border: 2px red solid; */
     text-align: center;
     display: flex;
     flex-direction: column;
 
 }
 .timeStamp .date{
-    border: 3px black solid;
-    color: #050c13;
-    font-size: 2rem;
-    font-weight: 600;
-}
-.timeStamp .time{
-    border: 2px orange solid;
-    color: #050c13;
+    /* border: 3px black solid; */
+    color: #630606;
     font-size: 1.5rem;
     font-weight: 600;
-
+    letter-spacing: 2px;
+}
+.timeStamp .time{
+    /* border: 2px orange solid; */
+    color: #630606;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 /* event.html file*/
 #container-fluid{

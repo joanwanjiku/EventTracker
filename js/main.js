@@ -6,6 +6,25 @@ let usersArray = [
 ]
 
 
+// Display current time
+var timer = setInterval(getTime, 1000)
+var today = new Date();
+    var date = today.toLocaleDateString().toString();
+    let mnt =  today.getMonth();
+    let day = today.getDay()
+    let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    document.getElementById('day').innerHTML = days[day] +","
+    document.getElementById('date').innerHTML =today.getDate() + " " + months[mnt] + " "+ today.getFullYear();
+
+function getTime() {
+    var today = new Date();          
+
+    var time = today.toLocaleTimeString();
+    document.getElementById('time').innerHTML = time;
+}
+
+// Toggle between sign in and sign up
 $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
@@ -19,7 +38,7 @@ $(document).ready(function(){
     $("form#form2").toggle();
   });
 
-
+// form validations
   $('#errorLen').hide();
   $('#errorMatch').hide();
   $('#errorPresence').hide();
@@ -43,10 +62,6 @@ $(document).ready(function(){
 
 
 });
-
-let signinBtn = document.getElementById('signinForm');
-let signupBtn = document.getElementById('signupForm');
-
 const checkLogin = (name, password) => {
   usersArray.forEach((user) => {
     if (user['userName'] == name && user['password'] == password){
