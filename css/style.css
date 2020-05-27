@@ -144,3 +144,17 @@ header h2 {
   padding: 20px;
   position: relative;
 }
+.contactForm {
+  background: rgba(0, 0, 128, 0.90);
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 40px;
+  box-shadow: 0px 0px 10px 3px grey;
+}
+.contactForm h1 {
+  text-align: center;
+}
+.contactForm p {
+  font-size: 20px;
+}
