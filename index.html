@@ -3,20 +3,41 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/style.css">
         <title>Event Tracker</title>
     </head>
     <body>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Event Tracker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="event.html">Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutUs">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
         <header class="current">
             <h2>Current time</h2>
         </header>
-        <div class="container">
+        <div class="container" id='aboutUs'>
             <div class="row mt-2">
                 <div class="col-md-7">
                     <h1>About us</h1>
-                    <p> 
-                        About Event Trucker we provide a plartform for you to track your evets on time.
+                   <p>
+                     About Event Trucker we provide a plartform for you to track your evets on time.
                         Events being important we help you track your events through a countdown from current time to the time 
                         of your event. 
                     </p>
@@ -28,12 +49,7 @@
                         Most of what we value is your feedback after using our platform. You can input your suggestions for better
                         improvement or for appreciating our work to help you track your events.
                         You can do this through filling the contact form or through social-media pages below this page..
-                    </p>
-                    <p> 
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ducimus magnam fugit sequi 
-                        molestias reiciendis quibusdam quis asperiores officiis sit, 
-                        dolore dignissimos suscipit aspernatur laboriosam nulla doloremque porro alias saepe?
-                    </p>
+                    </p>                   
                 </div>
                 <div class="col-md-5">
                     <div class="row">
@@ -98,6 +114,21 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="container-fluid padding text-center" id='social'>
+          <div class="row padding">
+            <br class='my-4'>
+            <div class="col-12 social padding">
+
+              <div class="list-group">
+                <a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
+                <a class="list-group-item" href="#"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Library</a>
+            </div>
+          </div>
+          <br class='my-4'>
+          <p class='lead text-center'>EVENT TRACKER</p>
+          <p class='text-center'>2019</p>
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
