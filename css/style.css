@@ -136,3 +136,11 @@ header h2 {
 #form1, #form2 {
     display: none;
 }
+
+.contactFormBackground {
+  background-image: url('../images/bgSmall.jpg');
+  background-size: cover;
+  opacity: 0.5;
+  padding: 20px;
+  position: relative;
+}
