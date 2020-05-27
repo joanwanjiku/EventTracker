@@ -2,17 +2,22 @@
 
 body{
     font-family: 'Crimson Text', serif;
+    margin: 0px;
+    padding: 0px;
 }
+
 img{
     width: 100%;
 }
 header{
     background: url('../images/bgSmall.jpg');
+    opacity: 0.5;
     height: 50vh;
 }
 /* event.html file*/
 #container-fluid{
     background-image: url('../images/event2.jpg');
+    opacity: 0.5;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -64,4 +69,3 @@ header h2 {
 #form1, #form2 {
     display: none;
 }
-
