@@ -31,7 +31,6 @@ $(document).ready(function(){
     var password = $('#signupPass').val();
     checkSignup(password)
     sessionStorage.user = JSON.stringify({userName: name, userPassword: password});
-
   });
 
   $('#form1').submit(function(e) {
@@ -47,15 +46,6 @@ $(document).ready(function(){
 
 let signinBtn = document.getElementById('signinForm');
 let signupBtn = document.getElementById('signupForm');
-// signinBtn.addEventListener('click', () => {
-//   let name = document.getElementById('name').value;
-//   let password = document.getElementById('password').value;
-//   console.log(`${name}, ${password}`)
-//   checkLogin(name,password);
-//   usersArray.push({userName: name, password: password})
-//   console.log(usersArray);
-//   sessionStorage.user = JSON.stringify({userName: name, userPassword: password})
-// });
 
 const checkLogin = (name, password) => {
   usersArray.forEach((user) => {
@@ -70,16 +60,8 @@ const checkLogin = (name, password) => {
       }
     }
   });
-}
-// signupBtn.addEventListener('click', () => {
-//   let name = document.getElementById('signupName').value;
-//   let password = document.getElementById('signupPass').value;
-//   console.log(`${name}, ${password}`)
-//   checkSignup(password);
-//   usersArray.push({userName: name, password: password})
-//   console.log(usersArray);
-//   sessionStorage.user = JSON.stringify({userName: name, userPassword: password})
-// });
+};
+
 
 const checkSignup = (password) => {
   let password2 = document.getElementById('signupPass2').value;
@@ -93,15 +75,9 @@ const checkSignup = (password) => {
           document.getElementById('errorLen').style.display = "block";
       }
   }
-}
+};
 
 
 
-// function validateform(){
-//   var name = document.getElementById("name").value
-//   var password = document.getElementById("password").value
-//   if(name =="" && password ==""){
-//     alert("Fill out all the fields");
-//   }
-// }
+
 
