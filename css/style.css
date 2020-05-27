@@ -191,3 +191,17 @@ header h2 {
   color: white;
   transition: all 0.4s;
 }
+.contactForm .contactMessage input {
+  background:	#C0C0C0;
+  color: black;
+}
+.contactForm .contactMessage textarea {
+  background: #C0C0C0;
+  color: black;
+}
+.contactForm .contactMessage input:focus {
+  background: white;
+}
+.contactForm .contactMessage textarea:focus {
+  background: white;
+}
