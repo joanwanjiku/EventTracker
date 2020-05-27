@@ -171,3 +171,23 @@ header h2 {
   padding: 20px;
   padding-bottom: 40px;
 }
+.contactForm .contactSocial {
+  padding-top: 0px;
+  padding: 40px;
+}
+.contactForm .contactSocial .contact {
+  padding-bottom: 60px;
+}
+.contactForm .contactSocial span {
+  color : #808080;
+}
+.contactForm .contactSocial .social a {
+  padding-right: 20px;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.5s;
+}
+.contactForm .contactSocial .social i:hover {
+  color: white;
+  transition: all 0.4s;
+}
