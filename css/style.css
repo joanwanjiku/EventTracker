@@ -21,10 +21,10 @@ header{
     align-items: center;
 }
 .timeStamp{
-    background: #aa9ba79c;
+    /* background: #aa9ba79c; */
     margin: auto;
     width: 60%;
-    box-shadow: 2px 2px 4px 5px #849fb4;
+    /* box-shadow: 2px 2px 4px 5px #849fb4; */
     /* border: 2px red solid; */
     text-align: center;
     display: flex;
@@ -34,14 +34,14 @@ header{
 .timeStamp .date{
     /* border: 3px black solid; */
     color: #630606;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     letter-spacing: 2px;
 }
 .timeStamp .time{
     /* border: 2px orange solid; */
     color: #630606;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     letter-spacing: 2px;
 }
