@@ -13,6 +13,17 @@ body{
 .menu span {
   color : #808080;
 }
+.my-navbar {
+  width: 100%;
+  padding: 20px 20px;
+  background-color: rgba(16,52,116,0.7);
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.7);
+
+
 
 img{
     width: 100%;
