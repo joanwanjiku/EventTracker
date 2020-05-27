@@ -68,18 +68,22 @@
                             <div class="form-group row">
                               <label for="name" class="col-sm-4 col-form-label">Name</label>
                               <div class="col-sm-8">
-                                <input type="text"  class="form-control" id="name" placeholder="yourname..." required>
+                                <input type="text"  class="form-control" id="signinName" placeholder="yourname..." required>
+                                <small id="errorPresence" style="color: red;">No such person, please create account</small>
+
                               </div>
                             </div>
                             <div class="form-group row">
                               <label for="inputPassword" class="col-sm-4 col-form-label">Password</label>
                               <div class="col-sm-8">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="yourpassword..." required>
+                                <input type="password" class="form-control" id="signinPass" placeholder="yourpassword..." required>
                               </div>
                             </div>
+                            <small id="errorPassword" style="color: red;">Wrong password, try again</small>
+                            
                             <div class="form-group row">
                                 <div class="col-sm-10">
-                                    <button type="button" aria-required="true" class="btn btn-info" id="signinForm"><a aria-required="true" href="./event.html">Submit</a></button>
+                                    <button type="submit" aria-required="true" class="btn btn-info" id="signinForm">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -89,24 +93,26 @@
                             <div class="form-group row">
                               <label for="name" class="col-sm-4 col-form-label">Name</label>
                               <div class="col-sm-8">
-                                <input type="text"  class="form-control" id="name" placeholder="yourname..." required>
+                                <input type="text"  class="form-control" id="signupName" placeholder="yourname..." required>
                               </div>
                             </div>
                             <div class="form-group row">
                               <label for="inputPassword" class="col-sm-4 col-form-label">Password</label>
                               <div class="col-sm-8">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="yourpassword..." required>
+                                <input type="password" class="form-control" id="signupPass" placeholder="yourpassword..." required>
+                                <small id="errorLen" style="color: red;">password should be more than six characters</small>
                               </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputPassword" class="col-sm-4 col-form-label">Retype password</label>
                                 <div class="col-sm-8">
-                                  <input type="password" class="form-control" id="inputPassword" placeholder="confirmpassword..." required>
+                                  <input type="password" class="form-control" id="signupPass2" placeholder="confirmpassword..." required>
+                                  <small id="errorMatch" style="color: red;">passwords should match</small>
                                 </div>
                               </div>
                             <div class="form-group row">
                                 <div class="col-sm-10">
-                                    <button type="button" aria-required="true" class="btn btn-info" id="signupForm"><a aria-required="true" href="./event.html">Submit</a></button>
+                                    <button type="submit" aria-required="true" class="btn btn-info" id="signupForm">Sub,it</button>
                                 </div>
                             </div>
                     </div>
