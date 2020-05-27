@@ -9,111 +9,126 @@
         <title>Event Tracker</title>
     </head>
     <body>
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html">Event Tracker</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="event.html">Event</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutUs">About Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-        <header class="current">
-            <h2>Current time</h2>
-        </header>
-        <div class="container" id='aboutUs'>
-            <div class="row mt-2">
-                <div class="col-md-7">
-                    <h1>About us</h1>
-                   <p>
-                     About Event Trucker we provide a plartform for you to track your evets on time.
-                        Events being important we help you track your events through a countdown from current time to the time 
-                        of your event. 
-                    </p>
-                    <p> 
-                        All you need to do is to sign up first if you are a new user to our website to acces the event platform.
-                        later you will enter a short description of the event and set the time to begin your countdown.
-                    </p>
-                    <p> 
-                        Most of what we value is your feedback after using our platform. You can input your suggestions for better
-                        improvement or for appreciating our work to help you track your events.
-                        You can do this through filling the contact form or through social-media pages below this page..
-                    </p>                   
-                </div>
-                <div class="col-md-5">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <button type="submit" class="btn btn-primary" id="signup">Sign up</button>
-                        </div>
-                        <div class="col-md-6">
-                            <button type="submit" class="btn btn-primary" id="signin">Sign in</button>
-
-                        </div>
-                    </div>
-                    <div class="row">
-
-                        <form id="form1">
-
-                            <div class="form-group row">
-                              <label for="name" class="col-sm-4 col-form-label">Name</label>
-                              <div class="col-sm-8">
-                                <input type="text"  class="form-control" id="name" placeholder="yourname..." required>
-                              </div>
-                            </div>
-                            <div class="form-group row">
-                              <label for="inputPassword" class="col-sm-4 col-form-label">Password</label>
-                              <div class="col-sm-8">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="yourpassword..." required>
-                              </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm-10">
-                                    <button type="submit" aria-required="true" class="btn btn-info"><a aria-required="true" href="./event.html">Submit</a></button>
-                                </div>
-                            </div>
-                        </form>
-
-                        <form id="form2">
-
-                            <div class="form-group row">
-                              <label for="name" class="col-sm-4 col-form-label">Name</label>
-                              <div class="col-sm-8">
-                                <input type="text"  class="form-control" id="name" placeholder="yourname..." required>
-                              </div>
-                            </div>
-                            <div class="form-group row">
-                              <label for="inputPassword" class="col-sm-4 col-form-label">Password</label>
-                              <div class="col-sm-8">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="yourpassword..." required>
-                              </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputPassword" class="col-sm-4 col-form-label">Retype password</label>
-                                <div class="col-sm-8">
-                                  <input type="password" class="form-control" id="inputPassword" placeholder="confirmpassword..." required>
-                                </div>
-                              </div>
-                            <div class="form-group row">
-                                <div class="col-sm-10">
-
-                                    <button type="submit" onclick="return validateform()" aria-required="true" class="btn btn-info"><a aria-required="true" href="./event.html">Submit</a></button>
-
-                                </div>
-                            </div>
-                    </div>
-                </div>
+      
+          <nav class="navbar navbar-default navbar-expand-lg fixed-top navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">Event Tracker</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="event.html">Event</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutUs">About Us</a>
+                </li>
+              </ul>
             </div>
+          </nav>
+     
+        <div class="container-fluid" >
+          <header class="row">
+            <div class="col">
+              <div class="row timeStamp">
+                <div class="date">
+                  <span id="day" style="color: #563521;"></span><p id="date"></p>
+                </div>
+                <div class="time">
+                  <p id="time"></p>
+                </div>
+              </div>   
+            </div>                 
+          </header>
+          <div class="row mt-2" id='aboutUs'>
+              <div class="col-md-7">
+                  <h1>About us</h1>
+                  <p>
+                    About Event Trucker we provide a plartform for you to track your evets on time.
+                      Events being important we help you track your events through a countdown from current time to the time 
+                      of your event. 
+                  </p>
+                  <p> 
+                      All you need to do is to sign up first if you are a new user to our website to acces the event platform.
+                      later you will enter a short description of the event and set the time to begin your countdown.
+                  </p>
+                  <p> 
+                      Most of what we value is your feedback after using our platform. You can input your suggestions for better
+                      improvement or for appreciating our work to help you track your events.
+                      You can do this through filling the contact form or through social-media pages below this page..
+                  </p>                   
+              </div>
+              <div class="col-md-5">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <button type="submit" class="btn btn-primary" id="signup">Sign up</button>
+                      </div>
+                      <div class="col-md-6">
+                          <button type="submit" class="btn btn-primary" id="signin">Sign in</button>
+
+                      </div>
+                  </div>
+                  <div class="row mt-4">
+
+                      <form id="form1">
+
+                          <div class="form-group row">
+                            <label for="name" class="col-sm-4 col-form-label">Name</label>
+                            <div class="col-sm-8">
+                              <input type="text"  class="form-control" id="signinName" placeholder="yourname..." required>
+                              <small id="errorPresence" style="color: red;">No such person, please create account</small>
+
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-4 col-form-label">Password</label>
+                            <div class="col-sm-8">
+                              <input type="password" class="form-control" id="signinPass" placeholder="yourpassword..." required>
+                            </div>
+                          </div>
+                          <small id="errorPassword" style="color: red;">Wrong password, try again</small>
+                          
+                          <div class="form-group row">
+                              <div class="col-sm-10">
+                                  <button type="submit" aria-required="true" class="btn btn-info" id="signinForm">Submit</button>
+                              </div>
+                          </div>
+                      </form>
+
+                      <form id="form2">
+
+                          <div class="form-group row">
+                            <label for="name" class="col-sm-4 col-form-label">Name</label>
+                            <div class="col-sm-8">
+                              <input type="text"  class="form-control" id="signupName" placeholder="yourname..." required>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-4 col-form-label">Password</label>
+                            <div class="col-sm-8">
+                              <input type="password" class="form-control" id="signupPass" placeholder="yourpassword..." required>
+                              <small id="errorLen" style="color: red;">password should be more than six characters</small>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="inputPassword" class="col-sm-4 col-form-label">Retype password</label>
+                              <div class="col-sm-8">
+                                <input type="password" class="form-control" id="signupPass2" placeholder="confirmpassword..." required>
+                                <small id="errorMatch" style="color: red;">passwords should match</small>
+                              </div>
+                            </div>
+                          <div class="form-group row">
+                              <div class="col-sm-10">
+                                  <button type="submit" aria-required="true" class="btn btn-info" id="signupForm">Sub,it</button>
+                              </div>
+                          </div>
+                  </div>
+              </div>
+          </div>          
         </div>
 
         <div class="container-fluid padding text-center" id='social'>
