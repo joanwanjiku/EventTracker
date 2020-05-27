@@ -17,8 +17,35 @@ header{
     background-image: url('../images/event2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height:auto;
 }
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 100%;
+}
+h2,h1,strong {
+    color: aqua;
+}
+textarea{
+    color: aquamarine;
+}
+
+
+a .event{
+    padding: 20px 18px;
+    margin-left: 4%;
+    font-size: 20px;
+    font-family: 'Lakki Reddy', cursive;
+    border-radius: 12%;
+    background-color: aquamarine;
+}
+
+
+
+
 .col-md-7, .col-md-5 {
     float: left;
     padding: 5%;
@@ -35,6 +62,8 @@ header h2 {
 .col-sm-8 {
     padding-top: 5%;
 }
+
 #form1, #form2 {
     display: none;
 }
+
