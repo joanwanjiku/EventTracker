@@ -27,7 +27,7 @@ input[type=text]:focus {
 h2,h1,strong {
     color: aqua;
 }
-textarea{
+label{
     color: aquamarine;
 }
 
