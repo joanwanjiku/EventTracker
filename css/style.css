@@ -1,10 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
 
 body{
+/*     margin: 0px; */
+/*     padding: 0px; */
     font-family: 'Crimson Text', serif;    
     min-height: 60rem;
     padding-top: 3.5rem;    
 }
+.menu {
+  position: relative;
+  width: 90%;
+  z-index: 9999;
+}
+.menu span {
+  color : #808080;
+}
+.my-navbar {
+  width: 100%;
+  padding: 20px 20px;
+  background-color: rgba(16,52,116,0.7);
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.7);
+}
+.nav-item .nav-link{
+  font-family: 'Oswald' ,sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 300!important;
+  text-transform: uppercase;
+  margin: 0px 10px;
+  position: relative;
+}
+.nav-item .nav-link:before{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transition: 0.5s;
+  content:'';
+  transform-origin: left;
+  background-color: white;
+}
+.nav-item .nav-link:hover:before{
+  transform-origin: right;
+  transform: scaleX(1);
+}
+.navbar-scroll{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(15, 82, 186, 0.9);
+  padding: 10px 20px;
+  transition: 0.5s;
+  animation: scroll 1.6s 1;
+}
+@@keyframes scroll {
+  0%{transform: translateY(-100%);}
+  100%{transform: translateY(0);}
+}
+.navbar-brand{
+  text-transform: capitalize;
+  font-size: 35px;
+  color: white;
+  font-style: italic;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}
+
+
+
 img{
     width: 100%;
 }
@@ -24,6 +94,7 @@ label{
 
 header{
     background: url('../images/bgSmall.jpg');
+    opacity: 0.5;
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
@@ -68,6 +139,7 @@ header{
 
 #container-fluid{
     background-image: url('../images/event2.jpg');
+    opacity: 0.5;
     background-size: cover;
     background-repeat: no-repeat;
     /* padding-top: 4%; */
@@ -91,7 +163,75 @@ input[type=text]:focus {
 .try{
     text-align: center;
 }
+#form1, #form2 {
+    display: none;
+}
 
-
-
-
+.contactFormBackground {
+  background-image: url('../images/bgSmall.jpg');
+  background-size: cover;
+  opacity: 0.5;
+  padding: 20px;
+  position: relative;
+}
+.contactForm {
+  background: rgba(0, 0, 128, 0.90);
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 40px;
+  box-shadow: 0px 0px 10px 3px grey;
+}
+.contactForm h1 {
+  text-align: center;
+}
+.contactForm p {
+  font-size: 20px;
+}
+.contactFormBackground .footerBottom {
+  background: #343a40;
+  color: white;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0px;
+  left:0px;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+.contactForm .contactSocial {
+  padding-top: 0px;
+  padding: 40px;
+}
+.contactForm .contactSocial .contact {
+  padding-bottom: 60px;
+}
+.contactForm .contactSocial span {
+  color : #808080;
+}
+.contactForm .contactSocial .social a {
+  padding-right: 20px;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.5s;
+}
+.contactForm .contactSocial .social i:hover {
+  color: white;
+  transition: all 0.4s;
+}
+.contactForm .contactMessage input {
+  background:	#C0C0C0;
+  color: black;
+}
+.contactForm .contactMessage textarea {
+  background: #C0C0C0;
+  color: black;
+}
+.contactForm .contactMessage input:focus {
+  background: white;
+}
+.contactForm .contactMessage textarea:focus {
+  background: white;
+}
