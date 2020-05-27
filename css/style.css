@@ -46,10 +46,12 @@ header{
     letter-spacing: 2px;
 }
 /* event.html file*/
+
 #container-fluid{
     background-image: url('../images/event2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    padding-top: 4%;
 }
 input[type=text] {
     width: 130px;
@@ -62,7 +64,7 @@ input[type=text]:focus {
 h2,h1,strong {
     color: aqua;
 }
-textarea{
+label{
     color: aquamarine;
 }
 
