@@ -5,6 +5,14 @@ body{
     margin: 0px;
     padding: 0px;
 }
+.menu {
+  position: relative;
+  width: 90%;
+  z-index: 9999;
+}
+.menu span {
+  color : #808080;
+}
 
 img{
     width: 100%;
