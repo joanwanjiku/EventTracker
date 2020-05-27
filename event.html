@@ -9,8 +9,31 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+  <!-- <div class="container-fluid menu">
+    <nav class="navbar navbar-expand-lg my-navbar">
+      <a class="navbar-brand" href="index.html"><span>Event</span>Tracker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="event.html">Event</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutUs">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactUs">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div> -->
+  <!-- <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
     <a class="navbar-brand" href="index.html">Event Tracker</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -29,7 +52,7 @@
         </li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
   <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 mt-2 try">
@@ -40,6 +63,10 @@
                 <div class="form-group m-0">
                   <label for="nameEvent">Event's Name</label>
                   <input type="text" class="form-control" id="nameEvent" placeholder="John's Birthday" required>
+                </div>
+                <div class="form-group m-0">
+                  <label for="nameEvent">Event's Location</label>
+                  <input type="text" class="form-control" id="locationEvent" placeholder="123, main strt" required>
                 </div>
                 <div class="form-group m-0">
                   <label for="date">Event's Date</label>
@@ -62,8 +89,8 @@
                   </select>
                 </div>                    
                 <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Event's Description</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                  <label for="eventDesc">Event's Description</label>
+                  <textarea class="form-control" id="eventDesc" rows="3" required></textarea>
                 </div>
                 <div class="form-group ">
                   <button type="submit" class="btn btn-primary">Add Event</button>
@@ -72,68 +99,17 @@
           </div>
         <div class="col-md-6 mt-2">
               <h1>List of Event</h1>
-              <div class="accordion" id="accordionExample">
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Collapsible Group Item #1
-                      </button>
-                    </h2>
-                  </div>
-              
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Collapsible Group Item #2
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Collapsible Group Item #3
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
+              <div class="accordion" id="eventList">
+                               
               </div>
         </div>
       </div>    
-  </div>
-
-        <div class="col-md-6">
-            <h1>List of Event</h1>
-
-        </div>
-
-    </div>
+  </div>  
 
 
 
-</div>
-</div>
- </div>
-   </div>
+
+
 
 
    <div class="container-fluid contactFormBackground" id='contactUs'>
