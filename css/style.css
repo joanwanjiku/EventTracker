@@ -8,6 +8,8 @@ img{
 }
 header{
     background: url('../images/bgSmall.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 50vh;
 }
 /* event.html file*/
