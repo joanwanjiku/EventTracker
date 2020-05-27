@@ -15,7 +15,6 @@ header{
     background-image: url('../images/event2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height:auto;
 }
 input[type=text] {
     width: 130px;
@@ -25,7 +24,21 @@ input[type=text] {
 input[type=text]:focus {
     width: 100%;
 }
+h2,h1,strong {
+    color: aqua;
+}
+textarea{
+    color: aquamarine;
+}
 
+a{
+    padding: 20px 18px;
+    margin-left: 4%;
+    font-size: 20px;
+    font-family: 'Lakki Reddy', cursive;
+    border-radius: 12%;
+    background-color: aquamarine;
+}
 
 
 .col-md-7, .col-md-5 {
