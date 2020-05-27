@@ -67,12 +67,7 @@ const checkLogin = (name, password) => {
     if (user['userName'] == name && user['password'] == password){
       window.location.href = "./event.html";
     }else{
-      if(user['userName'] != name){
-        document.getElementById('errorPresence').style.display = "block";
-      }
-      if(user['password'] != password){
-        document.getElementById('errorPassword').style.display = "block";
-      }
+      document.getElementById('errorPresence').style.display = "block";
     }
   });
 };
