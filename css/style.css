@@ -8,9 +8,20 @@ body{
 img{
     width: 100%;
 }
-.navbar-default  {
-	height:auto!important;
+
+h1 {
+    color: aqua;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
 }
+label{
+    color: black;
+    text-align: center;
+    font-size: 1.3rem;
+}
+/* index.html */
+
 header{
     background: url('../images/bgSmall.jpg');
     background-repeat: no-repeat;
@@ -45,50 +56,42 @@ header{
     font-weight: 600;
     letter-spacing: 2px;
 }
+#aboutUs{
+    width: 80%;
+    margin: auto;
+}
+
+#form1, #form2 {
+    display: none;
+}
 /* event.html file*/
 
 #container-fluid{
     background-image: url('../images/event2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 4%;
+    /* padding-top: 4%; */
 }
-input[type=text] {
-    width: 130px;
+/* input[type=text] {
+    width: auto;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
 input[type=text]:focus {
     width: 100%;
-}
-h2,h1,strong {
-    color: aqua;
-}
-label{
-    color: aquamarine;
-}
-
-
-a .event{
-    padding: 20px 18px;
-    margin-left: 4%;
-    font-size: 20px;
-    font-family: 'Lakki Reddy', cursive;
-    border-radius: 12%;
-    background-color: aquamarine;
-}
-
-.col-md-7, .col-md-5 {
-    float: left;
-    padding: 5%;
-}
-header h2 {
-    text-transform: uppercase;
-    color: brown;
+} */
+.identify{
     text-align: center;
-    padding-top: 10%;
+    padding: 0 1em;
 }
-#form1, #form2 {
-    display: none;
+#personName{
+    color: red;
+    font-size: 1.2rem;
 }
+.try{
+    text-align: center;
+}
+
+
+
 
