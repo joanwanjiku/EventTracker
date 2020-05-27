@@ -48,6 +48,29 @@ body{
   transform-origin: right;
   transform: scaleX(1);
 }
+.navbar-scroll{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(15, 82, 186, 0.9);
+  padding: 10px 20px;
+  transition: 0.5s;
+  animation: scroll 1.6s 1;
+}
+@@keyframes scroll {
+  0%{transform: translateY(-100%);}
+  100%{transform: translateY(0);}
+}
+.navbar-brand{
+  text-transform: capitalize;
+  font-size: 35px;
+  color: white;
+  font-style: italic;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}
+
 
 
 img{
