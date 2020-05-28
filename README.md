@@ -16,6 +16,11 @@
 * Fill in the event information
 
 ## BDD
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 | Behavior Our program should handle                  | Input Example When it Receives   | Output Example When it Receives  |
 | -------------------------------------------------   | ----------------------------   : | -------------------------------: |
