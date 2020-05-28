@@ -10,29 +10,53 @@ function Event(name, date, time, description, location){
     this.description = description;
     this.eventLocation = location;
 }
+// Event.prototype.timeDifference = function(){
+//  var deadline = new Date(this.eventDate)
+//   let x = setInterval(function() {
+//     let difference = deadline  - new Date();
+//     let remaining;
+//     const parts = {
+//       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+//       hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+//       minutes: Math.floor((difference / 1000 / 60) % 60),
+//       seconds: Math.floor((difference / 1000) % 60)
+//     };
+//     if (difference > 0) {     
+//       remaining = Object.keys(parts)
+//           .map(function(part){
+//               return `${parts[part]} ${part}`;
+//           }).join(',');
+//       }else{
+//         clearInterval(x);
+//         remaining= "Times Up";
+//       }
+//   console.log(remaining);
+//   }, 1000)  
+
+// };
 
 Event.prototype.timeDifference = function(){
-    let difference = new Date(this.eventDate) - new Date();
-    let remaining = "Time's up!";
-
-    if (difference > 0) {
-        const parts = {
-            days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-            hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-            minutes: Math.floor((difference / 1000 / 60) % 60),
-            seconds: Math.floor((difference / 1000) % 60)
-        };
-
-        remaining = Object.keys(parts)
-        // [days, hours, minutes, seconds]
-            .map(function(part){
-            // if (!parts[part]) return;
-                return `${parts[part]} ${part}`;
-            });
-            // .join(" ");
-        }
-    return remaining;
+      let difference = new Date(this.eventDate) - new Date();
+      let remaining = "Time's up!";
+  
+      if (difference > 0) {
+          const parts = {
+              days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+              hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+              minutes: Math.floor((difference / 1000 / 60) % 60),
+              seconds: Math.floor((difference / 1000) % 60)
+          };
+  
+          remaining = Object.keys(parts)
+              .map(function(part){
+                  return `${parts[part]} ${part}`;
+              })
+              .join(" ");
+          }
+      return remaining;
 }
+ 
+
 
 $(document).ready(function() {
     $('#eventForm').submit(function(e) {
