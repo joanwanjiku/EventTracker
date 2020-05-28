@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
 
 body{
-    margin: 0px; 
+    margin: 0px;
     padding: 0px;
-    font-family: 'Crimson Text', serif;    
+    font-family: 'Crimson Text', serif;
     /* min-height: 60rem;
     padding-top: 3.5rem;     */
 }
@@ -58,7 +58,7 @@ body{
   background-color: rgba(15, 82, 186, 0.9);
   padding: 10px 20px;
   transition: 0.5s;
-  animation: scroll 1.6s 1;
+  animation: scroll 0.6s 1;
 }
 @keyframes scroll {
   0%{transform: translateY(-100%);}
@@ -78,7 +78,7 @@ img{
 
 h1 {
     color: aqua;
-    font-size: 1.4rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
 }
@@ -88,29 +88,41 @@ label{
     font-size: 1.3rem;
 }
 /* index.html */
+.mainContainer {
+  padding: 20px;
+  padding-top: 0px
+}
+
+.eventBooking {
+  width: 80%;
+  margin: auto;
+}
 
 header{
     background: url('../images/bgSmall.jpg');
-    opacity: 0.5;
+    opacity: 0.7;
+    padding-bottom: 100px;
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
+    /* widht: 100%; */
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 .timeStamp{
     margin: auto;
-    width: 60%;
-  
-    text-align: center;
+    width: 80%;
+    opacity: 1;
+    text-align: right;
     display: flex;
     flex-direction: column;
 
 }
 .timeStamp .date{
-    color: #630606;
+    color: #ffffff;
     font-size: 2rem;
+    text-align: right;
     font-weight: 600;
     letter-spacing: 2px;
 }
@@ -123,12 +135,16 @@ header{
 #aboutUs{
     width: 80%;
     margin: auto;
+    padding: 40px;
 }
 
 #form1, #form2 {
     display: none;
 }
 /* event.html file*/
+.display-1 {
+  color: #ffffff;
+}
 
 .identify{
     text-align: center;
@@ -136,7 +152,7 @@ header{
 }
 #personName{
     color: red;
-    font-size: 1.2rem;
+    font-size: 2.5rem;
 }
 .try{
     text-align: center;
@@ -148,7 +164,7 @@ header{
 .contactFormBackground {
   background-image: url('../images/bgSmall.jpg');
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0.7;
   padding: 20px;
   position: relative;
 }
