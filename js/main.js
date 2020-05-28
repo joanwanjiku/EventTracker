@@ -7,7 +7,7 @@ let usersArray = [
 
 
 // Display current time
-var timer = setInterval(getTime, 1000)
+var timer = setInterval(getTime, 1000);
 var today = new Date();
     var date = today.toLocaleDateString().toString();
     let mnt =  today.getMonth();
@@ -18,7 +18,7 @@ var today = new Date();
     document.getElementById('date').innerHTML =today.getDate() + " " + months[mnt] + " "+ today.getFullYear();
 
 function getTime() {
-    var today = new Date();          
+    var today = new Date();
 
     var time = today.toLocaleTimeString();
     document.getElementById('time').innerHTML = time;
@@ -52,7 +52,7 @@ $(document).ready(function(){
   $('#errorPassword').hide();
 
   $('#form2').submit(function(e) {
-    e.preventDefault();    
+    e.preventDefault();
     var name = $('#signupName').val();
     var password = $('#signupPass').val();
     checkSignup(password)
@@ -60,7 +60,7 @@ $(document).ready(function(){
   });
 
   $('#form1').submit(function(e) {
-    e.preventDefault();    
+    e.preventDefault();
     var name = $('#signinName').val();
     var password = $('#signinPass').val();
     checkLogin(name, password)
@@ -93,8 +93,3 @@ const checkSignup = (password) => {
       }
   }
 };
-
-
-
-
-
