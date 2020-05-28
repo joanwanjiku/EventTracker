@@ -89,7 +89,7 @@ label{
 }
 /* index.html */
 .mainContainer {
-  padding 20px;
+  padding: 20px;
   padding-top: 0px
 }
 
@@ -105,7 +105,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
-    widht: 100%;
+    /* widht: 100%; */
     display: flex;
     justify-content: right;
     align-items: center;
