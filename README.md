@@ -16,17 +16,13 @@
 * Fill in the event information
 
 ## BDD
-| Tables        | Are           | Cool  |
+| Behavior Our program should handle        | Input Example When it Receives           | Output Example When it Receives  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+|  Enters invalid name and password to create account      | if you confirm wrong password | won't go to another page |
+| Enters valid  name and password to create account      | confirm correct password 6+digit      |  Takes one to another page |
+| Enters Email on our contact form | welcome form submitted       |    One subscribes |
 
-| Behavior Our program should handle                  | Input Example When it Receives   | Output Example When it Receives  |
-| -------------------------------------------------   | ----------------------------   : | -------------------------------: |
-| Enters invalid name and password to create account  | if you confirm wrong password    | won't go to another page         |
-| Enters valid  name and password to create account   | confirm correct password 6+digit | Takes one to another page        |
-| Enters Email on our contact form                    | welcome form submitted           | One subscribes                   |
+
 
 ## Live Link
 
