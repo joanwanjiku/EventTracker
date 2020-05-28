@@ -2,7 +2,6 @@ let user = JSON.parse(sessionStorage.user)
 document.getElementById('personName').innerHTML = user.userName;
 
 
-// kahsd, 3036-08-04, 11am, jsgdf
 function Event(name, date, time, description, location){
     this.eventName = name;
     this.eventDate = date;
@@ -10,7 +9,9 @@ function Event(name, date, time, description, location){
     this.description = description;
     this.eventLocation = location;
 }
+
 // Event.prototype.timeDifference = function(){
+
 //  var deadline = new Date(this.eventDate)
 //   let x = setInterval(function() {
 //     let difference = deadline  - new Date();
@@ -32,6 +33,8 @@ function Event(name, date, time, description, location){
 //       }
 //   console.log(remaining);
 //   }, 1000)  
+
+//   console.log(x)
 
 // };
 
@@ -73,13 +76,13 @@ $(document).ready(function() {
         $('#eventList').append(`<div class="card">
         <div class="card-header" id="${event.eventName}">
           <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#${event.timeEvent}" aria-expanded="true" aria-controls="${event.eventName}">
             ${event.eventName}
             </button>
           </h2>
         </div>
     
-        <div id="collapseOne" class="collapse" aria-labelledby="${event.eventName}" data-parent="#eventList">
+        <div id="${event.timeEvent}" class="collapse" aria-labelledby="${event.eventName}" data-parent="#eventList">
           <div class="card-body">
           <p>Your event will take place at <span style= "font-weight:bold;">${event.eventTime}</span> on <span style= "font-weight:bold;">${event.eventLocation}</span>, 
           you have  <span style= "font-weight:bold;">${event.timeDifference()} </span>to the start
@@ -88,10 +91,14 @@ $(document).ready(function() {
           
           </div>
           <div class="card-footer">
-          <a href= "#" class = "btn btn-primary">${event.timeDifference()}</a>          
+          <a href= "#" class = "btn btn-primary" id>${event.timeDifference()}</a>  
+                
           </div>
         </div>
       </div> `)
     });
     
-})
+
+
+});
+
