@@ -1,19 +1,21 @@
 # EventTracker
+This a platform for you to help you keep track your Events. Events being important we help you track your events through a countdown from current time to the time of your event.
 
-## Project description
- This web Appliation is to enable one to keep track of the coming event and reminds one in either phone or any digital decive that one has added the event too.
-## Contributors
+## Prerequisites
+- Have Git installed.
+- Have a text editor installed e.g VS Code, Atom
+### Technologies Used
+- HTML, CSS and Bootstrap
+- JavaScript and Jquery
+- Bootstrap
+- MailChimp Api
 
-- Joan Evans
-- Charles Okoba
-- Clinton Oliera
-- Virginiah Wamuyu
-## Project setup
-
-* Visit the site
-* Create an account,fill in credentials
-* Leads you to event page
-* Fill in the event information
+### Project setup
+To run the application:-
+1. Clone the repository to a folder in your machine using `https://github.com/joanwanjiku/ventTracker.git`
+2. Cd to that folder.
+3. `code .`, if you are using VS code.
+4. Open index.html on your browser.
 
 ## BDD
 | Behavior Our program should handle        | Input Example When it Receives           | Output Example When it Receives  |
@@ -24,18 +26,17 @@
 
 
 
-## Live Link
+#### Authors
+- Joan Evans
+    - joanevans18@gmail.com
+- Charles Okoba
+    - okobacharles@yahoo.co.uk
+- Clinton Oliera
+    - clintonoliera391@gmail.com
+- Virginiah Wamuyu
+    - vancyvy254@gmail.com
 
-https://joanwanjiku.github.io/EventTracker/
 
-## Technologies used
-- html
-- css
-- javascript
-- Jquery
-- Bootstrap
-- MailChimpApi
-
-## License
+### License
 _- **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2020 © <a href="#" target="_blank">EventTracker</a>.
+- Copyright &copy; 2020 <a href="#" target="_blank">EventTracker</a>.
